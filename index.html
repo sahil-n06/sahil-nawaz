@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Bricolage+Grotesque:opsz@10..48&family=Poppins:ital,wght@0,400;0,700;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style2.css">
+    <script src="https://kit.fontawesome.com/c0587701ca.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--          Header               -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="port_logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Devloper</p>
+                <h1>Hi, I'm <span>Sahil</span><br>Nawaz from India</h1>
+            </div>
+        </div>
+    </div>
+    <!--         about           -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="PhotoRoom-20230823_200154.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Passionate and motivated second-year B.Tech student at Lloyd Institute of Engineering and Technology, India. A dedicated coder with a  4-star(⭐) rating on HackerRank. Proficient in various coding languages and frameworks. Enthusiastic about learning new skills, working on diverse projects, and contributing positively to the coding world. Seeking opportunities to leverage coding skills and curiosity for problem-solving.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <!--   skills   -->
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Skilled in Web Technologies</span><br>Proficient in C, HTML, CSS, and JavaScript.</li>
+                            <li><span>Effective Troubleshooter</span><br>Problem-solving mindset with a knack for finding efficient solutions.</li>
+                            <li><span>HackerRank Achiever</span><br>Coding enthusiast with a 4-star rating on HackerRank.</li>
+                            <li><span>Pressure Resilience</span><br>Adaptability and ability to perform under pressure.</li>
+                            <li><span>Lifelong Learner</span><br>Strong dedication to continuous learning and personal development.</li>
+                        </ul>
+                    </div>
+                    <!--    Experience     -->
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Managed Coding Portfolio</span><br>Developed and maintained a personal portfolio website showcasing coding projects.</li>
+                            <li><span>social networking website</span><br>Created social networking website using HTML,CSS,JS.</li>
+                            <li><span></span><br></li>
+                        </ul>
+                    </div>
+                    <!--    Education     -->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022-2026(Current)</span><br>Undergraduate Course B.tech LLoyd Institue of Engg & Tech(LIET)</li>
+                            <li><span>2021</span><br>Higher Secondary School</li>
+                            <li><span>2019</span><br>Secondary School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--       services        -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Software Development</h2>
+                    <p>Proficient in coding languages such as C, HTML, CSS, and JavaScript, with the ability to contribute to the development of web-based applications and solutions.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Web Technologies</h2>
+                    <p> Skilled in web technologies, including front-end development (HTML, CSS, JavaScript), enabling the creation of user-friendly and responsive web interfaces.</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Problem Solving</h2>
+                    <p> Demonstrated problem-solving mindset with a knack for efficiently addressing challenges and finding innovative solutions.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--    portfolio      -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work-1.png">
+                    <div class="layer">
+                        <h3>Personal Portfolio Website</h3>
+                        <p>Designed and developed a personal portfolio website to showcase coding projects and skills. Utilized HTML, CSS, and JavaScript for responsive design and user-friendly navigation.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-2.png">
+                    <div class="layer">
+                        <h3>HackerRank Challenges</h3>
+                        <p>Actively participated in HackerRank coding challenges, achieving a 3-star rating. Consistently solved algorithmic and coding problems to enhance problem-solving skills.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-3.png">
+                    <div class="layer">
+                        <h3>Personal Coding Projects</h3>
+                        <p>Independently crafted a diverse coding portfolio and acquired expertise in web technologies (HTML, CSS, JavaScript) to design dynamic and visually appealing web interfaces.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <!--    contact form    -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>mdsahil622004@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>9990874079</p>
+                    <div class="social-icons">
+                        <a href="https://t.me/sahil_n06"><i class="fa-brands fa-telegram"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/sahil-nawaz"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://wa.me/qr/6IELLECX67K6N1"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                    <a href="my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="text" name="E-Mail" placeholder="Your e-mail" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            copyright &copy; sahil-portfolio 
+        </div>
+    </div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname)
+    {
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwZuQjnDl3NbMaMAzHzoim_NzrDs4k_6IiP3P9vF9nQahmztBrQUoxv3EEqQtuP7Hdt/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>{
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        }
+        )
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
